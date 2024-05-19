@@ -3,6 +3,9 @@
 	padding: 0;
 
 }
+html{
+	scroll-behavior: smooth;
+}
 .logo{
 	width: 20%;
 	display: flex;
@@ -14,6 +17,7 @@
 	width: 30%;
 	border: 3px solid greenyellow;
 	border-radius: 50px;
+	margin: 5px;
 
 }
 .navbar{
@@ -23,6 +27,9 @@
 	position: sticky;
 	top: 0;
 	cursor: pointer;
+	/*background-color: aqua;*/
+	
+	
 
 
 }
@@ -42,7 +49,7 @@ align-items: center;
 }
 .nav-list li a{
 text-decoration: none;
-color: white;
+color: black;
 font-size: 20px;
 
 }
@@ -66,6 +73,7 @@ font-size: 20px;
 
 }
 .background{
+	/*background-color: aquamarine;*/
 	background-image: url('bg.jpg');
 	background-size: cover;
 	background-blend-mode: lighten;
@@ -137,12 +145,15 @@ font-style: italic;
 
 }
 .section{
-	height: 300px;
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	margin: auto;
 	max-width: 80%;
+	font-family: 'Ubuntu',sans-serif;
+	padding: 0px;
+
 
 }
 .section-left{
@@ -161,13 +172,13 @@ height: 80vh;
 }
 .text-center{
 	text-align: center;
-	padding top: 20px;
+	padding-top: 20px;
 	font-family: 'Ubuntu',sans-serif;
 	font-size: 35px;
 
 }
 .form{
-	max-width: 1200px;
+	max-width: 62%;
 	margin: 22px auto;
 }
 .form input{
@@ -194,7 +205,7 @@ border-radius: 6px;
 position: absolute;
 cursor: pointer;
 right: 5%;
-top: 15%;
+top: 15px;
 
 }
 .line{
@@ -202,25 +213,4 @@ top: 15%;
 	background-color: white;
 	height: 4px;
 	margin: 5px 3px;
-}
-@media only screen and (max-width:1320px){
-	.nav-list{
-		flex-direction: column;
-	}
-	.navbar{
-		flex-direction: column;
-
-	}
-	.rightNav{
-		text-align: center;
-
-	}
-	#search{
-		width: 100%;
-
-	}
-	.burger{
-		display: block;
-	}
-
 }
